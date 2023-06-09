@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Work Survey Form in MoreLessInc</h1>
+    <p id="description">Send the following information and our recruiters will call you for an interview if you're the right fit, good luck.</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <div id="survey-label">
+            <label for="name" id="name-label">Name </label>
+            <input id="name" name="name" type="text" placeholder="name" required />
+            <label for="email" id="email-label">Email </label>
+            <input id="email" name="email" type="email" placeholder="ejemplo@ejemplo.com" required />
+            <label for="gender" id="gender-label">Gender 
+                <select id="gender" name="gender">
+                    <option value="1">Man</option>
+                    <option value="2">Women</option>
+                    <option value="3">Not Set</option>
+                </select>
+            </label>
+            <label for="number" id="number-label">Age(optional) </label>
+            <input id="number" type="number" placeholder="00" name="number" min="18" max="80" />
+            <label for="dropdown">Which option best describes your future role in own company?
+                <select id="dropdown">
+                    <option value="1">Developer Full Stack</option>
+                    <option value="2">Developer Web</option>
+                    <option value="3">Developer Backend</option>
+                    <option value="4">Data Analysy</option>
+                    <option value="5">Enginier DevOps</option>
+                </select>
+            </label>
+            <section class="interests-label">What are your interests?
+                <input id="games" type="checkbox" class="interests" name="games" value="games">
+                <label for="games">Games</label> 
+                <input id="sport" type="checkbox" class="interests" name="sport" value="sport">
+                <label for="sport">Sport</label>  
+                <input id="travel" type="checkbox" class="interests" name="travel" value="travel">
+                <label for="travel">Travel</label>
+                <input id="blogging" type="checkbox"  class="interests" name="blogging" value="blogging">
+                <label for="blogging">Blogging y podcasting</label> 
+                <input id="reading" type="checkbox"  class="interests" name="reading" value="reading">
+                <label for="reading">Reading</label>
+            </section>
+            <section class="company-recommended"> Someone from the company recommended you?
+                <input id="yes" type="radio" class="option-type" name="option-type" value="yes" />
+                <label for="yes">Yes</label> 
+                <input id="no" type="radio" class="option-type" name="option-type" value="no"/>
+                <label for="no">No</label>
+            </section>
+            <label>Upload CV: <input type="file" /></label>
+            <label for="bio-label">Provide a descripton of yourself
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I am..."></textarea>
+            </label>   
+        </div>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+<footer>
+</footer>
+</html>
